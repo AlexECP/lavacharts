@@ -1,8 +1,8 @@
 {
   "name": "lavacharts",
   "version": "3.1.0",
-  "description": "Wrapper library for the Google Chart API",
-  "homepage": "http://lavacharts.com",
+  "description": "Javascript module to handle the chart interaction with Lavacharts",
+  "homepage": "http://lavacharts.com/lava.js",
   "author": "Kevin Hill",
   "license": "MIT",
   "private": true,
@@ -16,8 +16,8 @@
     "q": "^1.4.1"
   },
   "devDependencies": {
-    "browserify": "^14.0.0",
-    "gulp": "^3.9.0",
+    "browserify": "^14.1.0",
+    "gulp": "^3.9.1",
     "gulp-bump": "^0.3.0",
     "gulp-connect-php": "0.0.8",
     "gulp-if": "^2.0.0",
@@ -33,7 +33,7 @@
     "jasmine-sinon": "^0.4.0",
     "jsdoc": "^3.4.0",
     "jshint-stylish": "^2.1.0",
-    "karma": "^0.13.0",
+    "karma": "^1.5.0",
     "karma-chrome-launcher": "^0.2.0",
     "karma-jasmine": "^0.3.5",
     "karma-phantomjs-launcher": "^0.1.4",
@@ -48,13 +48,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kevinkhill/lavacharts.git"
+    "url": "https://github.com/lavacharts/lava.js.git"
   },
   "bugs": {
-    "url": "https://github.com/kevinkhill/lavacharts/issues"
+    "url": "https://github.com/lavacharts/lava.js/issues"
   },
   "scripts": {
     "test": "./node_modules/.bin/karma start --singleRun",
-    "jsdoc": "./node_modules/.bin/jsdoc -d build/jsdoc --package package.json javascript/src/lava/Lava.js"
+    "docs": "./node_modules/.bin/jsdoc -d build/jsdoc --package package.json ./src/lava/Lava.js"
   }
 }
