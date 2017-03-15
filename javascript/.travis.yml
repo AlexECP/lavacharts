@@ -1,0 +1,33 @@
+language: node_js
+
+sudo: false
+
+node_js:
+  - node
+
+matrix:
+  fast_finish: true
+
+branches:
+  only:
+    - "master"
+    - "3.1"
+
+cache:
+  directories:
+    - $HOME/.npm
+    - node_modules
+
+# addons:
+#   code_climate:
+#     repo_token: 2f9d341839519e41ab143a4266d37887674d9ed0e5304929d8622125314a17df
+
+before_install:
+  - npm config set spin false
+
+install:
+  - npm install -g gulp
+  - npm install --no-progress
+
+script:
+  - npm run test
